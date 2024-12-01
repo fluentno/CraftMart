@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="CraftMart1.png">
+    <title>CraftMart ᯓ★</title>
+        <style>
+            /* Embedded CSS from previous styles.css */
+            :root {
+                --primary-color: #795548;
+                --secondary-color: #D7CCC8;
+                --background-color: #EFEBE9;
+                --text-color: #3E2723;
+            }
+    
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: var(--background-color);
+                color: var(--text-color);
+                line-height: 1.6;
+            }
+    
+            .container {
+                width: 90%;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+    
+            .header1 {
+                background-color: var(--secondary-color);
+                text-align: center;
+                padding: 20px 0;
+            }
+    
+            .header2 {
+                background-color: var(--secondary-color);
+                text-align: center;
+                padding: 10px 0;
+            }
+    
+            .logo {
+                max-width: 100px;
+                height: auto;
+            }
+    
+            .navbar {
+                background-color: var(--primary-color);
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+            }
+    
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                margin: 0 15px;
+                transition: transform 0.3s ease;
+            }
+    
+            .navbar a:hover {
+                transform: scale(1.1);
+            }
+    
+            .card {
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                padding: 20px;
+                margin: 20px 0;
+            }
+    
+            .btn {
+                display: inline-block;
+                background-color: var(--primary-color);
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+    
+            .btn:hover {
+                background-color: #5D4037;
+            }
+    
+            .footer {
+                background-color: var(--secondary-color);
+                text-align: center;
+                padding: 10px;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+    
+            .product-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+    
+            .product-card {
+                border: 1px solid var(--secondary-color);
+                padding: 15px;
+                text-align: center;
+            }
+    
+            .product-card img {
+                max-width: 100%;
+                height: auto;
+            }
+    
+            .profile-section {
+                display: flex;
+                align-items: center;
+            }
+    
+            .profile-image {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header1">
+            <img src="CraftMart.png" alt="CraftMart Logo" class="logo">
+            <h1>CraftMart ᯓ★</h1>
+        </div>
+    
+        <div class="header2">
+            ────୨ৎ Instagram ୨ৎ 0895411855225 ୨ৎ Semarang ୨ৎ────
+        </div>
+    
+        <div class="navbar">
+            <a href="index.html">Dashboard</a>
+            <a href="produk.html">Produk</a>
+            <a href="profil.html">Profil</a>
+            <a href="keranjang.html">Keranjang</a>
+            <a href="pembayaran.html">Pembayaran</a>
+            <a href="logout.html">Logout</a>
+        </div>
+    
+        <div class="container">
+            <div class="card">
+                <h2>Katalog Produk</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="Gelang.jpg" alt="Produk 1" width="250" height="250">
+                        <h3>Gelang</h3>
+                        <p>Rp 12.000</p>
+                        <a href="keranjang.html" class="btn">Tambah Keranjang</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="Keychain.jpg" alt="Produk 2" width="250" height="250">
+                        <h3>Keychain</h3>
+                        <p>Rp 15.000</p>
+                        <a href="keranjang.html" class="btn">Tambah Keranjang</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="Strapphone.jpg" alt="Produk 3" width="250" height="250">
+                        <h3>Strap Phone</h3>
+                        <p>Rp 10.000</p>
+                        <a href="keranjang.html" class="btn">Tambah Keranjang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer">
+            © 2024 CraftMart - All Rights Reserved
+        </div>
+    </body>
+    </html>
